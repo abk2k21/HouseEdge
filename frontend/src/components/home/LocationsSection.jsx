@@ -38,7 +38,7 @@ export default function LocationsSection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.45 }}
           className="text-center mb-5"
         >
           <span style={{ color: "#c9a962", letterSpacing: "0.3em", fontSize: "0.75rem" }}>OUR PRESENCE</span>
@@ -56,7 +56,7 @@ export default function LocationsSection() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
+              transition={{ duration: 0.45, delay: index * 0.07 }}
               className="col-md-6"
             >
               <div className="position-relative overflow-hidden" style={{ height: 320 }}>

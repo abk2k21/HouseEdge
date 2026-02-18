@@ -5,10 +5,10 @@ export function Layout() {
   return (
     <>
       <header id="main-header">
-        <nav className="navbar navbar-expand-lg navbar-dark" style={{ backgroundColor: "#1a1a1a" }}>
-          <div className="container-fluid">
+        <nav className="navbar navbar-expand-lg navbar-dark py-1" style={{ backgroundColor: "#1a1a1a" }}>
+          <div className="container-fluid px-3 px-lg-5">
             <NavLink className="navbar-brand" to="/">
-              <img width="100" src="/images/logo.png" alt="HouseEdge Logo" />
+              <img width="117" src="/images/logo.png" alt="HouseEdge Logo" />
             </NavLink>
 
             <button

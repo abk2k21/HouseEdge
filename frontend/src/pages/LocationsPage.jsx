@@ -98,7 +98,7 @@ export function LocationsPage() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.45 }}
           >
             <span style={{ color: "#c9a962", letterSpacing: "0.3em", fontSize: "0.75rem" }}>OUR PRESENCE</span>
             <h1 className="mt-3 text-white fw-light">Project Locations</h1>
@@ -119,7 +119,7 @@ export function LocationsPage() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.35, delay: index * 0.03 }}
+                transition={{ duration: 0.28, delay: index * 0.02 }}
               >
                 <div className="position-relative overflow-hidden" style={{ height: 420 }}>
                   <img src={location.cover_image} alt={location.name} className="w-100 h-100 object-fit-cover" />
