@@ -1,8 +1,8 @@
-# 🛍️ HomeEdge — Product Pages & Search Feature
+# 🛍️ HouseEdge — Product Pages & Search Feature
 
 **Team 51 — Front-End Development Contribution**
 
-This branch contains **all of my work** for the HomeEdge website, focusing on the product browsing experience, product page system, and the search functionality.
+This branch contains **all of my work** for the HouseEdge website, focusing on the product browsing experience, product page system, and the search functionality.
 
 ---
 
@@ -100,7 +100,7 @@ This creates a smooth browsing experience.
 
 I worked on front-end styling to ensure:
 
-* Clean UI consistent with HomeEdge branding
+* Clean UI consistent with HouseEdge branding
 * Responsive product grids
 * Image hover effects
 * Clear product information hierarchy
@@ -147,7 +147,7 @@ These images form a large part of the website’s visual identity.
 
 ## 🎯 Summary of My Impact
 
-My contributions complete the **core shopping experience** of the HomeEdge online store:
+My contributions complete the **core shopping experience** of the HouseEdge online store:
 
 ✔ Men/Women/Kids product page system
 ✔ Product detail pages

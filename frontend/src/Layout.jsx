@@ -8,7 +8,7 @@ export function Layout() {
         <nav className="navbar navbar-expand-lg navbar-dark" style={{ backgroundColor: "#1a1a1a" }}>
           <div className="container-fluid">
             <NavLink className="navbar-brand" to="/">
-              <img width="100" src="/images/logo.png" alt="HomeEdge Logo" />
+              <img width="100" src="/images/logo.png" alt="HouseEdge Logo" />
             </NavLink>
 
             <button
@@ -69,7 +69,7 @@ export function Layout() {
 
         <hr className="border-light" />
         <p className="mb-0">
-          &copy; {new Date().getFullYear()} HomeEdge. All Rights Reserved.
+          &copy; {new Date().getFullYear()} HouseEdge. All Rights Reserved.
         </p>
       </footer>
     </>

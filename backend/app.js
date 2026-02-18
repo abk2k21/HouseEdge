@@ -19,12 +19,12 @@ app.use(express.json()); // middleware to parse JSON request bodies
 
 // === BASIC ROUTES ===
 app.get("/", (req, res) => {
-  res.send("HomeEdge backend is running");
+  res.send("HouseEdge backend is running");
 });
 
 app.get("/api", (req, res) => {
   res.json({ 
-    message: "HomeEdge API is running",
+    message: "HouseEdge API is running",
     endpoints: ["GET /", "GET /api", "GET /api/health"],
   });
 });
