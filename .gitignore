@@ -1,0 +1,18 @@
+# Backend
+backend/node_modules/
+backend/.env
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Root npm artifacts
+node_modules/
+package-lock.json
+
+# Logs
+*.log
+
+# OS/System files
+.DS_Store
+Thumbs.db
