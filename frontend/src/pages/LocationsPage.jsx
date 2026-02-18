@@ -119,7 +119,7 @@ export function LocationsPage() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.08 }}
+                transition={{ duration: 0.35, delay: index * 0.03 }}
               >
                 <div className="position-relative overflow-hidden" style={{ height: 420 }}>
                   <img src={location.cover_image} alt={location.name} className="w-100 h-100 object-fit-cover" />
