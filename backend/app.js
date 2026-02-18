@@ -7,6 +7,8 @@ const app = express();
 app.use(cors({
   origin: [
     "http://localhost:5173",
+    "http://localhost:5174",
+    "http://localhost:5175",
     "https://cs2team51.cs2410-web01pvm.aston.ac.uk",
     "http://cs2team51.cs2410-web01pvm.aston.ac.uk"
   ],
@@ -15,43 +17,21 @@ app.use(cors({
 
 app.use(express.json()); // middleware to parse JSON request bodies
 
-// === ROUTE IMPORTS ===
-const productRoutes = require("./routes/products");
-const cartRoutes = require("./routes/cart");
-const orderRoutes = require("./routes/orders");
-const feedbackRoutes = require("./routes/feedback");
-const contactRoutes = require("./routes/contact");
-const userRoutes = require("./routes/users");
-
 // === BASIC ROUTES ===
 app.get("/", (req, res) => {
-  res.send("Backend is working - Summer");
+  res.send("HomeEdge backend is running");
 });
 
 app.get("/api", (req, res) => {
   res.json({ 
-    message: "API Backend is working - Summer",
-    endpoints: [
-      "GET /api/products",
-      "GET /api/products/:id",
-      "POST /api/cart",
-      "GET /api/orders",
-      "POST /api/feedback",
-      "POST /api/contact",
-      "POST /api/users/register",
-      "POST /api/users/login"
-    ]
+    message: "HomeEdge API is running",
+    endpoints: ["GET /", "GET /api", "GET /api/health"],
   });
 });
 
-
-// === API ROUTES ===
-app.use("/api/products", productRoutes);
-app.use("/api/cart", cartRoutes);
-app.use("/api/orders", orderRoutes);
-app.use("/api/feedback", feedbackRoutes);
-app.use("/api/contact", contactRoutes);
-app.use("/api/users", userRoutes);
+app.get("/api/health", (_req, res) => {
+  res.json({ status: "ok" });
+});
 
 
 // === 404 HANDLER ===
@@ -66,5 +46,4 @@ app.use((req, res) => {
 const PORT = process.env.PORT || 21051;
 app.listen(PORT, () => {
   console.log(`✅ Server running on http://localhost:${PORT}`);
-  console.log(`🌐 Live URL: https://cs2team51.cs2410-web01pvm.aston.ac.uk:${PORT}`);
 });

@@ -6,10 +6,6 @@ backend/.env
 frontend/node_modules/
 frontend/dist/
 
-# Root npm artifacts
-node_modules/
-package-lock.json
-
 # Logs
 *.log
 

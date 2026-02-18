@@ -1,26 +1,14 @@
 import React from "react";
-import { NavLink, Outlet, useNavigate } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
 export function Layout() {
-  const [search, setSearch] = React.useState("");
-  const navigate = useNavigate();
-
-  const handleSearchSubmit = (e) => {
-    e.preventDefault();
-    const term = search.trim();
-    if (!term) return;
-
-    // Always navigate to the global search page with query param
-    navigate(`/search?q=${encodeURIComponent(term)}`);
-  };
-
   return (
     <>
       <header id="main-header">
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar navbar-expand-lg navbar-dark" style={{ backgroundColor: "#1a1a1a" }}>
           <div className="container-fluid">
             <NavLink className="navbar-brand" to="/">
-              <img width="100" src="/images/logo.png" alt="OSAI Logo" />
+              <img width="100" src="/images/logo.png" alt="HomeEdge Logo" />
             </NavLink>
 
             <button
@@ -55,26 +43,6 @@ export function Layout() {
                   </NavLink>
                 </li>
               </ul>
-
-              {/* NAV SEARCH */}
-              <form className="nav-search d-flex me-3" onSubmit={handleSearchSubmit}>
-                <input
-                  className="form-control"
-                  type="search"
-                  placeholder="Search products…"
-                  value={search}
-                  onChange={(e) => setSearch(e.target.value)}
-                />
-                <button className="btn profile-btn ms-2" type="submit">
-                  Search
-                </button>
-              </form>
-
-              <div className="d-flex align-items-center gap-3">
-                <NavLink to="/login" className="btn btn-outline-light profile-btn">
-                  <i className="bi bi-person-circle" /> Login / Profile
-                </NavLink>
-              </div>
             </div>
           </div>
         </nav>
@@ -86,18 +54,22 @@ export function Layout() {
 
       <footer className="bg-dark text-light mt-5 pt-4 pb-4 text-center">
         <h4>Contact Us</h4>
-        <p>Bringing authentic and stylish clothing to your wardrobe.</p>
-        <p>Find us at 134a Aston Road, Birmingham, United Kingdom</p>
+        <p>Ready to transform your space? We&apos;d love to hear about your project.</p>
+        <p className="mb-1">Based In: Kerala, India</p>
+        <p className="mb-1">
+          Call: <a className="text-warning" href="tel:+918848005218">+91 8848 005 218</a> /{" "}
+          <a className="text-warning" href="tel:+918943475218">+91 8943 475 218</a>
+        </p>
         <p>
           Email:{" "}
-          <a className="text-warning" href="mailto:240365581@aston.ac.uk">
-            OSAI@aston.ac.uk
+          <a className="text-warning" href="mailto:houseedgebuilders@gmail.com">
+            houseedgebuilders@gmail.com
           </a>
         </p>
 
         <hr className="border-light" />
         <p className="mb-0">
-          &copy; {new Date().getFullYear()} OSAI Fashion. All Rights Reserved.
+          &copy; {new Date().getFullYear()} HomeEdge. All Rights Reserved.
         </p>
       </footer>
     </>

@@ -96,7 +96,7 @@ export default function Contact() {
 
                 <div className="mt-4">
                   <a
-                    href="https://wa.me/918848005218"
+                    href="https://wa.me/918848005218?text=Hi%20HomeEdge%2C%20I%20would%20like%20to%20discuss%20my%20project."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn"
