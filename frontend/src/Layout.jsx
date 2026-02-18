@@ -21,24 +21,24 @@ export function Layout() {
             </button>
 
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <ul className="navbar-nav me-auto mb-2 mb-lg-0 gap-lg-1">
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/services">
+                  <NavLink className="nav-link px-lg-2" to="/services">
                     Services
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/locations">
+                  <NavLink className="nav-link px-lg-2" to="/locations">
                     Locations
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/gallery">
+                  <NavLink className="nav-link px-lg-2" to="/gallery">
                     Gallery
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/contact">
+                  <NavLink className="nav-link px-lg-2" to="/contact">
                     Contact
                   </NavLink>
                 </li>
