@@ -64,7 +64,7 @@ export default function HeroSection() {
             transition={{ duration: 1, delay: 0.3 }}
             className="mb-4"
           >
-            <img src="/images/logo.png" alt="houseedge Builders" className="mx-auto d-block" style={{ width: "min(190px, 45vw)", height: "auto" }} />
+            <img src="/images/logo.png" alt="housedge Builders" className="mx-auto d-block" style={{ width: "min(190px, 45vw)", height: "auto" }} />
           </motion.div>
 
           <h1 className="fw-semibold text-white mb-3" style={{ letterSpacing: "0.35em", fontSize: "clamp(1rem, 2.8vw, 1.45rem)" }}>

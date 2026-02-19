@@ -34,13 +34,13 @@ export default function ContactSection() {
                 </div>
               </a>
 
-              <a href="mailto:houseedgebuilders@gmail.com" className="d-flex align-items-center gap-3 text-decoration-none text-dark">
+              <a href="mailto:housedgebuilders@gmail.com" className="d-flex align-items-center gap-3 text-decoration-none text-dark">
                 <div className="d-flex align-items-center justify-content-center" style={{ width: 48, height: 48, backgroundColor: "#1a1a1a" }}>
                   <Mail size={20} className="text-white" strokeWidth={1.5} />
                 </div>
                 <div>
                   <p className="mb-0" style={{ fontSize: "0.8rem", color: "#999", letterSpacing: "0.08em" }}>Email Us</p>
-                  <p className="mb-0">houseedgebuilders@gmail.com</p>
+                  <p className="mb-0">housedgebuilders@gmail.com</p>
                 </div>
               </a>
 
@@ -73,7 +73,7 @@ export default function ContactSection() {
 
               <div className="mt-4">
                 <a
-                  href="https://wa.me/918848005218?text=Hi%20houseedge%2C%20I%20would%20like%20to%20discuss%20my%20project."
+                  href="https://wa.me/918848005218?text=Hi%20housedge%2C%20I%20would%20like%20to%20discuss%20my%20project."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn d-inline-flex align-items-center gap-2"

@@ -17,7 +17,7 @@ app.use(cors({
   credentials: true
 }));
 
-app.use(express.json()); // middleware to parse JSON request bodies
+app.use(express.json()); 
 
 // === BASIC ROUTES ===
 app.get("/", (req, res) => {

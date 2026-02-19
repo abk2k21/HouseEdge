@@ -8,7 +8,7 @@ export function Layout() {
         <nav className="navbar navbar-expand-lg navbar-dark py-1" style={{ backgroundColor: "#1a1a1a" }}>
           <div className="container-fluid px-3 px-lg-5">
             <NavLink className="navbar-brand" to="/">
-              <img width="117" src="/images/logo.png" alt="houseedge Logo" />
+              <img width="117" src="/images/logo.png" alt="housedge Logo" />
             </NavLink>
 
             <button
@@ -62,14 +62,14 @@ export function Layout() {
         </p>
         <p>
           Email:{" "}
-          <a className="text-warning" href="mailto:houseedgebuilders@gmail.com">
-            houseedgebuilders@gmail.com
+          <a className="text-warning" href="mailto:housedgebuilders@gmail.com">
+            housedgebuilders@gmail.com
           </a>
         </p>
 
         <hr className="border-light" />
         <p className="mb-0">
-          &copy; {new Date().getFullYear()} houseedge. All Rights Reserved.
+          &copy; {new Date().getFullYear()} housedge. All Rights Reserved.
         </p>
       </footer>
     </>
